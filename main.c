@@ -5,10 +5,6 @@
  * Author : kpgiri
  */ 
 
-/*
-https://www.avrfreaks.net/s/topic/a5C3l000000UV3KEAW/t133160
-*/
-
 #define F_CPU 1000000UL  // 1 MHz
 
 #include <avr/io.h>
@@ -54,7 +50,7 @@ int main(void)
 	// Short flash
 	
 	PORTB |= 1<<1;		//Pin PB1
-	_delay_ms(5);		
+	_delay_ms(10);		
 	PORTB &= ~(1<<1);	//Pin PB1
 	
 	delay_power_down_wdt(WDTO_8S);		// (WDTO_500MS)(WDTO_1S)(WDTO_4S)(WDTO_8S)
