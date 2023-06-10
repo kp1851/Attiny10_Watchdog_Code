@@ -1,9 +1,3 @@
-/*
- * Low Power Led Flasher Tiny10
- * Used Attiny10
- * Created: 5/13/2020 9:59:30
- * Author : kpgiri
- */ 
 
 #define F_CPU 1000000UL  // 1 MHz
 
